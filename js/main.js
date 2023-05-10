@@ -11,12 +11,8 @@ robotron.addEventListener("click", () => {
     console.log('Olá!!')
 })
 
-
-
-
+//bloco responsável por adicionar função de soma e subtração de pontos de poder para cada aspecto do robotron
 const controle = document.querySelectorAll("[data-controle]")
-
-
 controle.forEach((elemnto) => {
     elemnto.addEventListener("click", (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
@@ -33,6 +29,7 @@ function manipulaDados(operacao, controle) {
     }
 }
 
+//bloco responsável por auterar as estatisticas do robotron conforme os pontos de poder distribuídos
 const pecas = {
     "bracos": {
         "forca": 29,
