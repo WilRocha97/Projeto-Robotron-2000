@@ -9,9 +9,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
-    background-position: center center;
-    background-size: cover cover;
+    background-color: #000000;
     padding: 0;
     margin: 0;
     font-weight: 300;
