@@ -27,20 +27,21 @@ main {
     gap: 1vw;
 }
 
+.botoes {
+   right: 5%;
+   bottom: 10%;
+   display: flex;
+}
+
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
-    margin: 0;
+    margin: 2rem;
     flex-basis: 40%;
-    position: relative;
 }
 
 .robo {
-    height: 110%;
-    z-index: 1;
-    position: absolute;
-    left: -20%;
-    top: -5%;
+    width: 50em;
 }
 
 .titulo {
@@ -60,7 +61,7 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: auto;
+    height: 100%;
     width: auto;
 }
 
@@ -68,7 +69,6 @@ main {
 
 .equipamentos {
     flex-basis: 32%;
-    height: auto;
 }
 
 .montador {
@@ -76,20 +76,24 @@ main {
 }
 
 .montador-conteudo {
+    width: auto;
     padding: 2em 10%;
 }
 
 .peca {
+    width: auto;
     padding: 1em 0;
 }
 
 .peca-titulo {
+    width: auto;
     color: var(--main-branco);
     text-transform: uppercase;
     font-size: 2.5em;
 }
 
 .controle {
+    width: auto;
     background: var(--main-preto);
     border-radius: 25px;
     float: right;
@@ -143,6 +147,17 @@ main {
     cursor: pointer;
 }
 
+.producao-cores {
+    margin: 2px;
+    text-transform: uppercase;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+    width: 100px;
+}
+
+
 .producao:hover {
     background: var(--main-preto);
     color: var(--main-branco)
@@ -152,6 +167,7 @@ main {
 
 /****************************** Estatísticas *****/
 .estatisticas {
+    width: auto;
     flex-basis: 23%;
     padding: 2em 2em 0;
 }
@@ -240,6 +256,14 @@ main {
             "robotron robotron"
             "box equipamentos"
     }
+
+    .botoes {
+        position: inherit;
+        right: 5%;
+        bottom: 10%;
+        display: flex;
+        flex-wrap: wrap;
+     }
 
     .robotron {
         position: inherit;

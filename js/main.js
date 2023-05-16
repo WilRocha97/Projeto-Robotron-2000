@@ -39,11 +39,6 @@ const pecas = {
     }
 }
 
-//robotron.addEventListener("click", function() {
-robotron.addEventListener("click", () => {
-    console.log('Olá!!')
-})
-
 //bloco responsável por adicionar função de soma e subtração de pontos de poder para cada aspecto do robotron
 controle.forEach((elemento) => {
     elemento.addEventListener("click", (evento) => {
@@ -86,4 +81,8 @@ function atualizaEstatistica(operacao, controle, peca) {
         }
     })
 }
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }
 
