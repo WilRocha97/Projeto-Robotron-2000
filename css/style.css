@@ -60,13 +60,15 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
+    height: auto;
+    width: auto;
 }
 
 /****************************** Equipamentos *****/
 
 .equipamentos {
     flex-basis: 32%;
+    height: auto;
 }
 
 .montador {
@@ -228,4 +230,38 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+@media screen and (max-width: 1160px) {
+    main { 
+        display: grid;
+        grid-template-rows: auto repeat(2, 1fr) auto;
+        grid-template-areas: 
+            "robotron robotron"
+            "box equipamentos"
+    }
+
+    .robotron {
+        position: inherit;
+        width: 10rem;
+    }
+    
+    .robo {
+        height: auto;
+        width: 25rem;
+        z-index: 0;
+        position: inherit;
+        left: 0;
+        top: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    main { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 }
