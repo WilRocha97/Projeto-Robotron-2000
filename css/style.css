@@ -35,13 +35,14 @@ main {
 
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
+    background-size: auto;
     background-position: center center;
     margin: 2rem;
     flex-basis: 40%;
 }
 
 .robo {
-    width: 50em;
+    width: 40em;
 }
 
 .titulo {
@@ -152,12 +153,11 @@ main {
     text-transform: uppercase;
     border: 3px solid var(--main-branco);
     background: var(--main-branco);
-    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
     width: 100px;
 }
 
-
+.producao-cores:hover,
 .producao:hover {
     background: var(--main-preto);
     color: var(--main-branco)
@@ -286,6 +286,15 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+     }
+
+     .robo {
+        width: 20rem;
     }
 
 }
