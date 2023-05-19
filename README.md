@@ -5,6 +5,7 @@ Projeto JS do site Robotron-2000 feito em curso
 ## Ferramentas utilizadas:
 * HTML
 * CSS
+* JavaScript
 
 ## Feito por
 ### Willian Rodrigues
